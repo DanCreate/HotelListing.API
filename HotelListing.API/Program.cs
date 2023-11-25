@@ -71,11 +71,19 @@ builder.Services.AddAuthentication(options => {
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+
+//not deleted in case of need
+//if (app.Environment.IsDevelopment())
+//{
+    
+//}
+
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "HotelListing.API");
+    c.RoutePrefix = string.Empty;
+});
 
 app.UseMiddleware<ExceptionMiddleware>();
 app.UseSerilogRequestLogging();
