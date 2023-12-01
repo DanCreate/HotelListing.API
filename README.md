@@ -8,4 +8,5 @@ The idea behind this project is to comprehend the concepts for developing an API
 5. Executing Migrations using EntityFramework.
 6. Implementing Identity Core.
 7. Incorporating JWT Authentication.
-8. Managing Exception Handling.
+8. Managing Exception Handling.<br>
+<br>![hotelapi](https://github.com/DanCreate/HotelListing.API/assets/58237012/847b4df9-469b-4029-b665-9df7a753bb0a)
